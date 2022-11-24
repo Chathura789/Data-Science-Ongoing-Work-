@@ -1,0 +1,12 @@
+#!pip install pytube 
+#Working version
+
+import pytube
+link = "https://www.youtube.com/watch?v=0bPJPiX89K0"
+yt = pytube.YouTube(link)
+stream = yt.streams.first()
+stream.download()
+
+#Addtional 
+#https://www.geeksforgeeks.org/shutil-module-in-python/
+#https://www.geeksforgeeks.org/pytube-python-library-download-youtube-videos/
